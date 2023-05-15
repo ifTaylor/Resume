@@ -1,0 +1,234 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PlushCV - One Page Two Column Resume
+% LaTeX Template
+% Version 1.0 (11/28/2021)
+%
+% Author:
+% Shubham Mazumder (http://mazumder.me)
+%
+% Hacked together from:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add more icon options 
+% 4. Fix hacky left alignment on contact line
+% 5. Remove Hacky fix for awkward extra vertical space
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the vertical limit.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%Icons:
+%%Main: https://icons8.com/icons/carbon-copy
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{TTurner}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\namesection{Taylor}{Turner}{Software Engineer}{\contactline{\href{mailto:tjt.email1@gmail.com}{tjt.email1@gmail.com}}
+{\href{tel:+618-402-4677}{618-402-4677}}
+{\href{https://www.linkedin.com/}{ifTaylorthenHire}}}
+
+% \namesection{Firstname}{Lastname}{Full Stack Software Engineer}{\contactline{\href{https://www.mazumder.me}{mazumder.me}}{\href{https://www.github.com/sansquoi}{sansquoi}}{\href{https://www.linkedin.com/mazumders}{mazumders}}{\href{mailto:shubham.mazumder@gmail.com}{first.last@email.com}}{\href{tel:+1999999999}{9999999999}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.70\textwidth} 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\runsubsection{Bastian Solutions}
+\descript{| Software Engineer}
+\location{1 year | September 2022 – Current | Maryland Heights, MO}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\sectionsep
+\item Develop middle-ware solutions for peripheral robots, automation controllers, and vision systems using Python and .NET C\#.
+\item Design tools to aid robotic control and its product mission data. An AI was created to control robot acceleration by grading product fixturing confidence of the robot's EOAT.
+\item Transition R\&D products to manufacturing by providing continuous improvement in debugging communication and product statistical changes.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Beckwood Press}
+\descript{| Electrical Controls Engineer }
+\location{6 years | October 2016 – September 2022 | Fenton, MO}
+\begin{tightemize}
+\sectionsep
+\item Developed numerical methods and closed-loop control to operate custom hydraulic and servo automation systems. Kinematic, filtering, and linearization algorithms led to significant improvement in material forming specifications.
+\item Facilitated collaboration to learn and prioritize low-level solutions. Our team helped grow design structures intended for rapid development and integration. We also created analytic tools from extensive data collection to showcase product performance and competitiveness within the market.
+\item Demonstrated machine and process specification during final acceptance testing with customers and provided additional deliverables for existing designs.  
+\end{tightemize}
+\sectionsep
+
+\runsubsection{EPIC Inc.}
+\descript{| Electrical Controls Technician }
+\location{2 years | December 2014 – October 2016 | St. Louis, MO}
+\begin{tightemize}
+\sectionsep
+\item Assembled and designed electrical panels and machine wiring for pilot plants, vision systems, and custom machines. The multidisciplinary designs of the products gave the opportunity to be cross-trained in mechanical and process design. 
+\item Implemented designs that conformed to sanitary/wash-down, Class I Division I, and National Electric Code requirements.              
+\end{tightemize}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Projects
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+
+\runsubsection{Stack}
+\descript{| C\#, SQL Server, React.js}
+\location{2023}
+\begin{tightemize}
+\item Pattern creation and solving web application that bridges a warehouse management system's palatalization orders to location and orientation robot commands. 
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Pick}
+\descript{| Python}
+\location{2022}
+\begin{tightemize}
+\item Middle-ware to interface various vision system pick parameters with robots and automation controllers.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Liaison}
+\descript{| C\#, Blazor}
+\location{2022}
+\begin{tightemize}
+\item Software used to felicitate traffic logic for Automated Guided Vehicles. The software provides a custom traffic logic configuration and can interface with third party traffic logic servers.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Motion}
+\descript{| Automation Controller/Pascal}
+\location{2018}
+\begin{tightemize}
+\item Motion controller tailored for hydraulic position, velocity, and force control, set point modeling, and feedback tuning.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Awards} 
+% \begin{tabular}{rll}
+% 2020	     & Finalist & Lorem Ipsum\\
+% 2018	     & $2^{nd}$ & Dolor Sit Amet\\
+% 2015	     & Finalist  & Cras posuere\\
+% \\
+% \end{tabular}
+% \sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.25\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+\sectionsep
+\location{Proficient:}
+C\# \textbullet{} Python \textbullet{} SQL \textbullet{} TypeScript \\
+React.js \textbullet{} Automation Controllers\\
+\sectionsep
+\location{Familiar:}
+C/C++ \textbullet{} Visual Basic \textbullet{} HTML\\
+Blazor \textbullet{} Shell \textbullet{} \LaTeX\\
+\sectionsep
+\sectionsep
+\subsection{Libraries/Frameworks}
+\sectionsep
+ASP.NET Core \textbullet{} Node.js \textbullet{} Flask\\
+\sectionsep
+\sectionsep
+\subsection{Development Tools}
+\sectionsep
+Git \textbullet{} Azure \textbullet{} Visual Studio \\
+\sectionsep
+\subsection{Methodologies}
+\sectionsep
+Agile/Sprint \textbullet{} Waterfall \textbullet{} OOP\\
+FMEA \textbullet{} UL 508A \textbullet{} SCADA \textbullet{}\\ 
+Project Management\\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+\subsection{Ranken Technical College}
+\descript{Associate's in Electrical Control Systems}
+\location{December 2014 | St. Louis, MO}
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %     Volunteer
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Volunteer} 
+{\textbf{Offensive/Defensive Line Coach}, Titans of Troy, IL}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Coursework}
+
+% \subsection{Graduate}
+% Graduate Algorithms \textbullet{}\\ 
+% Advanced Computer Architecture \textbullet{}\\ 
+% Operating Systems \textbullet{}\\ 
+% Artificial Intelligence \textbullet{}\\
+% Visualization For Scientific Data \\
+% \sectionsep
+
+% \subsection{Undergraduate}
+
+% Database Management Systems \textbullet{}\\
+% Object Oriented Analysis and Design \textbullet{}\\
+% Artificial Intelligence and Expert Systems \textbullet{}\\
+% Scripting Languages and Web Tech \textbullet{}\\
+% Software Engineering \\
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
+
