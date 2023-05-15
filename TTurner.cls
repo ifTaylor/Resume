@@ -1,4 +1,4 @@
-% Intro Options
+%	Intro Options
 \ProvidesClass{plushcv}[2021/11/30 CV class]
 \NeedsTeXFormat{LaTeX2e}
 \DeclareOption{print}{\def\@cv@print{}}
@@ -8,7 +8,7 @@
 \ProcessOptions\relax
 \LoadClass{article}
 
-% Package Imports
+%	Package Imports
 \usepackage[lmargin=0.9cm, vmargin=0.85cm, rmargin=0.9cm]{geometry}
 \usepackage[hidelinks]{hyperref}
 \usepackage{enumitem}
@@ -17,11 +17,11 @@
 \usepackage[document]{ragged2e}
 
 
-% Publications
+%	Publications
 \usepackage{cite}
 \renewcommand\refname{\vskip -1.5cm}
 
-% Color definitions
+%	Color definitions
 \usepackage[usenames,dvipsnames]{xcolor}
 \definecolor{date}{HTML}{666666}
 \definecolor{title}{HTML}{04246b}
@@ -29,90 +29,15 @@
 \definecolor{headings}{HTML}{6A6A6A}
 \definecolor{subheadings}{HTML}{333333}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%Main Title Font Definitions
-%Used for Name  and Section Headings
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	Main Title Font Definitions
+%	Used for Name  and Section Headings
 \def \pathtitlefont {fonts/sourcesanspro/} 
 \def \firstnamefont {sourcesanspro-SemiBold}
 \def \secondnamefont {sourcesanspro-SemiBold}
 \def \titlefont {\firstnamefont}
 \def \namefontsize {9.5}
 
-%% Office Code Pro D Title:
-%%%%%%%%%%%%%%%%%%%%%%%%%
-% \def \pathtitlefont {fonts/officecodeprod/} 
-% \def \firstnamefont {officecodeprod-medium}
-% \def \secondnamefont {officecodeprod-regular}
-% \def \titlefont {\firstnamefont}
-% \def \namefontsize {9.5}
-
-
-%% Source Sans Pro Title:
-%%%%%%%%%%%%%%%%%%%%%%%%%
-% \def \pathtitlefont {fonts/sourcesanspro/} 
-% \def \firstnamefont {sourcesanspro-SemiBold}
-% \def \secondnamefont {sourcesanspro-light}
-% \def \titlefont {\firstnamefont}
-% \def \namefontsize {9.5}
-
-%% Source Serif Pro Title:
-%%%%%%%%%%%%%%%%%%%%%%%%%
-% \def \pathtitlefont {fonts/sourceserifpro/} 
-% \def \firstnamefont {sourceserifpro-SemiBold}
-% \def \secondnamefont {sourceserifpro-light}
-% \def \titlefont {\firstnamefont}
-% \def \namefontsize {9.5}
-
-%% Prata Title:
-%%%%%%%%%%%%%%%%%%%%%%%%%
-% \def \pathtitlefont {fonts/prata/} 
-% \def \firstnamefont {prata-regular}
-% \def \secondnamefont {prata-regular}
-% \def \titlefont {\firstnamefont}
-% \def \namefontsize {9.5}
-
-%% Marcellus Title:
-%%%%%%%%%%%%%%%%%%%%%%%%%
-% \def \pathtitlefont {fonts/marcellus/} 
-% \def \firstnamefont {Marcellus-Regular}
-% \def \secondnamefont {Marcellus-Regular}
-% \def \titlefont {\firstnamefont}
-% \def \namefontsize {9.5}
-
-%% AbrilFatface Title:
-%%%%%%%%%%%%%%%%%%%%%%%%%
-% \def \pathtitlefont {fonts/abril_fatface/} 
-% \def \firstnamefont {AbrilFatface-Regular}
-% \def \secondnamefont {AbrilFatface-Regular}
-% \def \titlefont {\firstnamefont}
-% \def \namefontsize {9.5}
-
-%% Merriweather Title:
-%%%%%%%%%%%%%%%%%%%%%%%%%
-% \def \pathtitlefont {fonts/merriweather/} 
-% \def \firstnamefont {Merriweather-Regular}
-% \def \secondnamefont {Merriweather-Light}
-% \def \titlefont {\firstnamefont}
-% \def \namefontsize {9.5}
-
-%% Merriweather Title:
-%%%%%%%%%%%%%%%%%%%%%%%%%
-% \def \pathtitlefont {fonts/oxygen/} 
-% \def \firstnamefont {Oxygen-Regular}
-% \def \secondnamefont {Oxygen-Light}
-% \def \titlefont {\firstnamefont}
-% \def \namefontsize {9.5}
-
-%% Inter Title:
-%%%%%%%%%%%%%%%%%%%%%%%%%
-% \def \pathtitlefont {fonts/inter/} 
-% \def \firstnamefont {Inter-SemiBold}
-% \def \secondnamefont {inter-light}
-% \def \titlefont {\firstnamefont}
-% \def \namefontsize {9.5}
-
-%Main Font Definitions
+%	Main Font Definitions
 \def \pathmainfont {fonts/inter/}
 \def \mainfont {inter-light}
 \def \mainfontbold {inter-semibold}
@@ -121,14 +46,14 @@
 \def \mainfontsize {8}
 \def \mainsansfont {inter-light}
 
-%Main Subheading Font Definitions
-%Used for company name and sub-skills
+%	Main Subheading Font Definitions
+%	Used for company name and sub-skills
 \def \pathsubheadingfont {\pathtitlefont}
 \def \subheadingfont {\titlefont}
 \def \subheadingsize {10}
 
-%Main Job Descriptor and Location Font Definitions
-%Used for company name and sub-skills
+%	Main Job Descriptor and Location Font Definitions
+%	Used for company name and sub-skills
 \def \pathdescriptorfont {\pathsubheadingfont}
 \def \descriptorfont {\secondnamefont}
 \def \descriptorsize {9}
@@ -136,20 +61,20 @@
 \def \locationfont {\subheadingfont}
 \def \locationsize {8pt}
 
-%Main Monospace Font Definitions 
-%Used for Job Title and Contact Line 
+%	Main Monospace Font Definitions 
+%	Used for Job Title and Contact Line 
 \def \pathmonofont {fonts/officecodeprod/}
 \def \monofont {OfficeCodeProD-Light}
 
 
-% Set main fonts
+%	Set main fonts
 \usepackage{fontspec}
 \setmainfont[Color=primary, Path = \pathmainfont,BoldFont=\mainfontbold,UprightFeatures={SizeFeatures={Size=\mainfontsize}},
   BoldFeatures={SizeFeatures={Size=\mainfontsize}}]{\mainfont}
 \setsansfont[Scale=MatchLowercase,Mapping=tex-text, Path = \pathmainfont,UprightFeatures={SizeFeatures={Size=\mainfontsize}}
   ]{\mainsansfont}
 
-% Date command
+%	Date command
 \usepackage[absolute]{textpos}
 \usepackage[UKenglish]{isodate}
 \setlength{\TPHorizModule}{1mm}
@@ -159,12 +84,12 @@
 Last Updated on \today
 \end{textblock}}
 
-% Name command
+%	Name command
 
 \newcommand{\namesection}[4]{
 \RaggedRight{
 \color{title}
-\fontsize{35pt}{45pt}
+\fontsize{30pt}{45pt}
 \fontspec[Path = \pathtitlefont]{\firstnamefont}\selectfont #1 
 \fontspec[Path = \pathtitlefont]{\secondnamefont}\selectfont #2
 } \\[5pt]
@@ -183,9 +108,9 @@ Last Updated on \today
 \vspace{-15pt}
 }
 
-% Section separators
+%	Section separators
 \usepackage{titlesec}
-\titlespacing{\section}{0pt}{5pt}{5pt}
+\titlespacing{\section}{0pt}{3pt}{3pt}
 \titlespacing{\subsection}{0pt}{0pt}{0pt}
 \newcommand{\sectionsep}{\vspace{5pt}}
 
@@ -210,12 +135,18 @@ Last Updated on \today
 \color{headings}\raggedright\fontspec[Path = \pathlocationfont]{\locationfont}\fontsize{\locationsize}{12pt}\selectfont {#1\\} \normalfont}
 
 %Contact Line
-\newcommand{\contactline}[3]{\begingroup
-\setbox0=\hbox{
-\includegraphics[scale=0.2,trim={0cm 1.25cm -0.4cm 0cm}]{icons/main/mail.png}{#1}\hspace{0.3cm}
-\includegraphics[scale=0.2,trim={0cm 1.25cm -0.4cm 0cm}]{icons/main/phone.png}{#2}\hspace{0.3cm}
-\includegraphics[scale=0.2,trim={0cm 1.25cm -0.4cm 0cm}]{icons/main/linkedin.png}{#3}\hspace{0.3cm}
-}\parbox{\wd0}{\box0}\endgroup}
+\newcommand{\contactline}[5]{%
+  \begingroup
+  \setbox0=\hbox{%
+    \includegraphics[scale=0.2,trim={0cm 1.25cm -0.4cm 0cm}]{icons/main/mail.png}{#1}\hspace{0.3cm}%
+    \includegraphics[scale=0.2,trim={0cm 1.25cm -0.4cm 0cm}]{icons/main/phone.png}{#2}\hspace{0.3cm}%
+    \includegraphics[scale=0.2,trim={0cm 1.25cm -0.4cm 0cm}]{icons/main/linkedin.png}{#3}\hspace{0.3cm}%
+    \includegraphics[scale=0.2,trim={0cm 1.25cm -0.4cm 0cm}]{icons/main/github.png}{#4}\hspace{0.3cm}%
+    \includegraphics[scale=0.2,trim={0cm 1.25cm -0.4cm 0cm}]{icons/main/home.png}{#5}%
+  }%
+  \parbox{\wd0}{\box0}%
+  \endgroup
+}
 
 %Inline Centered Logo
 \newcommand{\vcenteredinclude}[2]{\begingroup

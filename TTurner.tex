@@ -1,79 +1,29 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% PlushCV - One Page Two Column Resume
-% LaTeX Template
-% Version 1.0 (11/28/2021)
-%
-% Author:
-% Shubham Mazumder (http://mazumder.me)
-%
-% Hacked together from:
-% https://github.com/deedydas/Deedy-Resume
-%
-% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
-%
-% 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% 
-% TODO:
-% 1. Figure out a smoother way for the document to flow onto the next page.
-% 3. Add more icon options 
-% 4. Fix hacky left alignment on contact line
-% 5. Remove Hacky fix for awkward extra vertical space
-% 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-% CHANGELOG:
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-% Known Issues:
-% 1. Overflows onto second page if any column's contents are more than the vertical limit.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%Icons:
-%%Main: https://icons8.com/icons/carbon-copy
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \documentclass[]{TTurner}
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhf{}
 \begin{document}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%     TITLE NAME
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\namesection{Taylor}{Turner}{Software Engineer}{\contactline{\href{mailto:tjt.email1@gmail.com}{tjt.email1@gmail.com}}
+%	TITLE NAME
+\namesection{Taylor}{Turner}{Software Engineer}{\contactline{\href{mailto:resume.tturner@gmail.com}{resume.tturner@gmail.com}}
 {\href{tel:+618-402-4677}{618-402-4677}}
-{\href{https://www.linkedin.com/}{ifTaylorthenHire}}}
+{\href{https://www.linkedin.com/in/ifTaylorthenHire}{ifTaylorthenHire}}
+{\href{https://github.com/ifTaylor}{ifTaylor}}
+{\href{https://www.ifTaylor.com}{ifTaylor.com}}}
 
-% \namesection{Firstname}{Lastname}{Full Stack Software Engineer}{\contactline{\href{https://www.mazumder.me}{mazumder.me}}{\href{https://www.github.com/sansquoi}{sansquoi}}{\href{https://www.linkedin.com/mazumders}{mazumders}}{\href{mailto:shubham.mazumder@gmail.com}{first.last@email.com}}{\href{tel:+1999999999}{9999999999}}}
+%	COLUMN ONE
+\begin{minipage}[t]{0.7\textwidth} 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%     COLUMN ONE
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{minipage}[t]{0.70\textwidth} 
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     EXPERIENCE
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+%	EXPERIENCE
 \section{Experience}
 \runsubsection{Bastian Solutions}
 \descript{| Software Engineer}
 \location{1 year | September 2022 – Current | Maryland Heights, MO}
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\vspace{\topsep}
 \begin{tightemize}
 \sectionsep
-\item Develop middle-ware solutions for peripheral robots, automation controllers, and vision systems using Python and .NET C\#.
-\item Design tools to aid robotic control and its product mission data. An AI was created to control robot acceleration by grading product fixturing confidence of the robot's EOAT.
-\item Transition R\&D products to manufacturing by providing continuous improvement in debugging communication and product statistical changes.
+\item Utilized Python and .NET C\# to design and implement middleware solutions for automation controllers, robots, and vision systems. These solutions improved communication capabilities between peripheral devices, and automated statistical data collection for tracking performance.
+\item Transitioned R\&D products to manufacturing, which involved continuous improvement in integration testing and product statistical changes. Through this process, I identified and resolved issues, streamlined the product production and documentation process, and improved product quality. 
 \end{tightemize}
 \sectionsep
 
@@ -82,9 +32,8 @@
 \location{6 years | October 2016 – September 2022 | Fenton, MO}
 \begin{tightemize}
 \sectionsep
-\item Developed numerical methods and closed-loop control to operate custom hydraulic and servo automation systems. Kinematic, filtering, and linearization algorithms led to significant improvement in material forming specifications.
-\item Facilitated collaboration to learn and prioritize low-level solutions. Our team helped grow design structures intended for rapid development and integration. We also created analytic tools from extensive data collection to showcase product performance and competitiveness within the market.
-\item Demonstrated machine and process specification during final acceptance testing with customers and provided additional deliverables for existing designs.  
+\item Developed numerical methods and closed-loop control to operate custom hydraulic and servo automation systems. Using automation controllers and python, target generation, filtering, and linearization algorithms resulted in significant improvement in material forming quality.
+\item Facilitated team collaboration to learn and prioritize low-level solutions. Our team helped grow electrical design structures intended for rapid development and integration. We also created analytic tools from extensive data collection to showcase product performance and competitiveness within the marketplace. 
 \end{tightemize}
 \sectionsep
 
@@ -98,112 +47,70 @@
 \end{tightemize}
 \sectionsep
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     Projects
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+%	Projects
 \section{Projects}
 
 \runsubsection{Stack}
 \descript{| C\#, SQL Server, React.js}
-\location{2023}
 \begin{tightemize}
-\item Pattern creation and solving web application that bridges a warehouse management system's palatalization orders to location and orientation robot commands. 
+\item A web application built with C\#/ASP.NET CORE and React/Next.js using TypeScript. It solves palletization patterns from product dimensions and layer requirements, then sends location and orientation commands to a robot. Devices can be created, and their configurations saved using Entity Framework Core and MS SQL Server.  The application is patented, providing a robust palletization solution that helps the company maintain high-quality standards and product line.
 \end{tightemize}
 \sectionsep
 
 \runsubsection{Pick}
 \descript{| Python}
-\location{2022}
 \begin{tightemize}
-\item Middle-ware to interface various vision system pick parameters with robots and automation controllers.
-\end{tightemize}
-\sectionsep
-
-\runsubsection{Liaison}
-\descript{| C\#, Blazor}
-\location{2022}
-\begin{tightemize}
-\item Software used to felicitate traffic logic for Automated Guided Vehicles. The software provides a custom traffic logic configuration and can interface with third party traffic logic servers.
+\item A Python application that interfaces with a vision system's procedure calls and serializes communication to robots and automation controllers. The system includes a Flask server that allows an automation HMI to operate other devices via REST API calls. Additionally, data analysis tools enhance the accuracy of model training and motion planning using incoming data. This innovative solution simplifies the interface with substitute manufacturers, making the automation process scalable and efficient.
 \end{tightemize}
 \sectionsep
 
 \runsubsection{Motion}
 \descript{| Automation Controller/Pascal}
-\location{2018}
 \begin{tightemize}
-\item Motion controller tailored for hydraulic position, velocity, and force control, set point modeling, and feedback tuning.
+\item A motion controller specialized in hydraulic position, velocity, and force control. It incorporates set point modeling for target generation and feedback tuning to enhance accuracy. The control algorithm can be incorporated in any automation controller, the company's hydraulic applications more competitive in the marketplace. 
 \end{tightemize}
 \sectionsep
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     AWARDS
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% \section{Awards} 
-% \begin{tabular}{rll}
-% 2020	     & Finalist & Lorem Ipsum\\
-% 2018	     & $2^{nd}$ & Dolor Sit Amet\\
-% 2015	     & Finalist  & Cras posuere\\
-% \\
-% \end{tabular}
-% \sectionsep
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%     COLUMN TWO
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+%	COLUMN TWO
 \end{minipage} 
 \hfill
 \begin{minipage}[t]{0.25\textwidth} 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     SKILLS
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+%	SKILLS
 \section{Skills}
 \subsection{Programming}
 \sectionsep
 \location{Proficient:}
-C\# \textbullet{} Python \textbullet{} SQL \textbullet{} TypeScript \\
-React.js \textbullet{} Automation Controllers\\
+C\# \textbullet{} Python \textbullet{} SQL Server \textbullet{} TypeScript \textbullet{} React.js \textbullet{} Automation Controllers\\
 \sectionsep
 \location{Familiar:}
 C/C++ \textbullet{} Visual Basic \textbullet{} HTML\\
-Blazor \textbullet{} Shell \textbullet{} \LaTeX\\
+Blazor \textbullet{} PowerShell \textbullet{} \LaTeX\\
 \sectionsep
 \sectionsep
-\subsection{Libraries/Frameworks}
+\subsection{Frameworks/Assembiles}
 \sectionsep
-ASP.NET Core \textbullet{} Node.js \textbullet{} Flask\\
+ASP.NET Core \textbullet{} Node.js \textbullet{} Flask \textbullet{} Entity Framework Core \textbullet{} log4net \textbullet{} ClxDriver \textbullet{} Interop.FRRobot
 \sectionsep
 \sectionsep
-\subsection{Development Tools}
+\subsection{Development Platforms}
 \sectionsep
-Git \textbullet{} Azure \textbullet{} Visual Studio \\
+Visual Studio \textbullet{} Git \textbullet{} GitHub \textbullet{} Azure\\
 \sectionsep
 \subsection{Methodologies}
 \sectionsep
-Agile/Sprint \textbullet{} Waterfall \textbullet{} OOP\\
-FMEA \textbullet{} UL 508A \textbullet{} SCADA \textbullet{}\\ 
-Project Management\\
+Agile/Sprint \textbullet{} OOP \textbullet{} FMEA \textbullet{} UL 508A \textbullet{} SCADA \textbullet{} Project Management\\
 \sectionsep
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     EDUCATION
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%	EDUCATION
 \section{Education} 
 \subsection{Ranken Technical College}
 \descript{Associate's in Electrical Control Systems}
 \location{December 2014 | St. Louis, MO}
 
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% %     Volunteer
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+%	Volunteer
 \section{Volunteer} 
 {\textbf{Offensive/Defensive Line Coach}, Titans of Troy, IL}
 
