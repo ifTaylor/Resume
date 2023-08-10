@@ -1,4 +1,4 @@
-%	Intro Options
+%	TTurner.cls
 \ProvidesClass{plushcv}[2021/11/30 CV class]
 \NeedsTeXFormat{LaTeX2e}
 \DeclareOption{print}{\def\@cv@print{}}
@@ -9,7 +9,7 @@
 \LoadClass{article}
 
 %	Package Imports
-\usepackage[lmargin=0.9cm, vmargin=0.85cm, rmargin=0.9cm]{geometry}
+\usepackage[lmargin=0.7cm, vmargin=0.7cm, rmargin=0.7cm]{geometry}
 \usepackage[hidelinks]{hyperref}
 \usepackage{enumitem}
 \usepackage{graphicx}
@@ -89,7 +89,7 @@ Last Updated on \today
 \newcommand{\namesection}[4]{
 \RaggedRight{
 \color{title}
-\fontsize{30pt}{45pt}
+\fontsize{28pt}{42pt}
 \fontspec[Path = \pathtitlefont]{\firstnamefont}\selectfont #1 
 \fontspec[Path = \pathtitlefont]{\secondnamefont}\selectfont #2
 } \\[5pt]
