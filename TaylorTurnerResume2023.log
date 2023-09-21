@@ -1,13 +1,13 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.10) (preloaded format=xelatex 2023.1.30)  29 AUG 2023 15:11
+This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.10) (preloaded format=xelatex 2023.1.30)  21 SEP 2023 07:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**./TTurner.tex
-(TTurner.tex
+**./TaylorTurnerResume2023.tex
+(TaylorTurnerResume2023.tex
 LaTeX2e <2022-06-01> patch level 5
-L3 programming layer <2022-09-28> (TTurner.cls
+L3 programming layer <2022-09-28> (TaylorTurnerResume2023.cls
 
-LaTeX Warning: You have requested document class `TTurner',
+LaTeX Warning: You have requested document class `TaylorTurnerResume2023',
                but the document class provides `plushcv'.
 
 Document Class: plushcv 2021/11/30 CV class
@@ -443,8 +443,8 @@ Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
 \f@nch@O@erf=\skip73
 \f@nch@O@olf=\skip74
 \f@nch@O@orf=\skip75
-) (TTurner.aux)
-\openout1 = `TTurner.aux'.
+) (TaylorTurnerResume2023.aux)
+\openout1 = `TaylorTurnerResume2023.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
 LaTeX Font Info:    ... okay on input line 5.
@@ -508,9 +508,9 @@ LaTeX Font Info:    ... okay on input line 5.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package hyperref Info: Link coloring OFF on input line 5.
-(TTurner.out) (TTurner.out)
+(TaylorTurnerResume2023.out) (TaylorTurnerResume2023.out)
 \@outlinefile=\write3
-\openout3 = `TTurner.out'.
+\openout3 = `TaylorTurnerResume2023.out'.
 
 Package ragged2e Info: ABD: executing \RaggedRight on input line 5.
 
@@ -654,10 +654,10 @@ ble
 (Font)              size <8> substituted on input line 20.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 89.
+(Font)              <8> on input line 90.
 [1
 
-] (TTurner.aux)
+] (TaylorTurnerResume2023.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 3.0pt have occurred.
@@ -665,22 +665,17 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+Package rerunfilecheck Info: File `TaylorTurnerResume2023.out' has not changed.
 
-Package rerunfilecheck Warning: File `TTurner.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `TTurner.out':
-(rerunfilecheck)             Before: 0666D2635CCF2AC71ED8A31D8D7B6510;1170
-(rerunfilecheck)             After:  51FAAACFCE74A48C1C92E584B0F33137;1150.
+(rerunfilecheck)             Checksum: 19ED39CB784022E2672574541C6F5AF6;1209.
  ) 
 Here is how much of TeX's memory you used:
  13137 strings out of 410532
- 254783 string characters out of 2820404
- 685057 words of memory out of 3000000
+ 255353 string characters out of 2820404
+ 684186 words of memory out of 3000000
  34139 multiletter control sequences out of 15000+600000
  474012 words of font info for 73 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 87i,11n,136p,666b,537s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 87i,11n,136p,494b,537s stack positions out of 10000i,1000n,20000p,200000b,80000s
 
-Output written on TTurner.pdf (1 page).
+Output written on TaylorTurnerResume2023.pdf (1 page).
