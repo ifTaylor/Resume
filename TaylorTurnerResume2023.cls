@@ -15,6 +15,8 @@
 \usepackage{graphicx}
 \usepackage{pifont}
 \usepackage[document]{ragged2e}
+\usepackage{hyperref}
+\usepackage[normalem]{ulem}
 
 
 %	Publications

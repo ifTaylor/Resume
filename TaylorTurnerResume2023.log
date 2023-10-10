@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.10) (preloaded format=xelatex 2023.1.30)  25 SEP 2023 07:32
+This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.10) (preloaded format=xelatex 2023.1.30)  10 OCT 2023 12:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -267,6 +267,17 @@ Package footmisc Info: Declaring symbol style lamport*-robust on input line 764
 \RaggedLeftParindent=\skip62
 \RaggedRightParindent=\skip63
 \JustifyingParindent=\skip64
+) (C:\MiKTeX\tex/latex/ulem\ulem.sty
+\UL@box=\box53
+\UL@hyphenbox=\box54
+\UL@skip=\skip65
+\UL@hook=\toks20
+\UL@height=\dimen158
+\UL@pe=\count273
+\UL@pixel=\dimen159
+\ULC@box=\box55
+Package: ulem 2019/11/18
+\ULdepth=\dimen160
 ) (C:\MiKTeX\tex/latex/cite\cite.sty
 LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 332.
@@ -300,11 +311,11 @@ Package: expl3 2022-09-28 L3 programming layer (loader)
 
 (C:\MiKTeX\tex/latex/l3backend\l3backend-xetex.def
 File: l3backend-xetex.def 2022-09-28 L3 backend support: XeTeX
-\g__graphics_track_int=\count273
-\l__pdf_internal_box=\box53
-\g__pdf_backend_object_int=\count274
-\g__pdf_backend_annotation_int=\count275
-\g__pdf_backend_link_int=\count276
+\g__graphics_track_int=\count274
+\l__pdf_internal_box=\box56
+\g__pdf_backend_object_int=\count275
+\g__pdf_backend_annotation_int=\count276
+\g__pdf_backend_link_int=\count277
 ))
 Package: xparse 2022-06-22 L3 Experimental document command parser
 )
@@ -313,20 +324,20 @@ Package: fontspec 2022/01/15 v2.8a Font selection for XeLaTeX and LuaLaTeX
 (C:\MiKTeX\tex/latex/fontspec\fontspec-xetex.sty
 Package: fontspec-xetex 2022/01/15 v2.8a Font selection for XeLaTeX and LuaLaTe
 X
-\l__fontspec_script_int=\count277
-\l__fontspec_language_int=\count278
-\l__fontspec_strnum_int=\count279
-\l__fontspec_tmp_int=\count280
-\l__fontspec_tmpa_int=\count281
-\l__fontspec_tmpb_int=\count282
-\l__fontspec_tmpc_int=\count283
-\l__fontspec_em_int=\count284
-\l__fontspec_emdef_int=\count285
-\l__fontspec_strong_int=\count286
-\l__fontspec_strongdef_int=\count287
-\l__fontspec_tmpa_dim=\dimen158
-\l__fontspec_tmpb_dim=\dimen159
-\l__fontspec_tmpc_dim=\dimen160
+\l__fontspec_script_int=\count278
+\l__fontspec_language_int=\count279
+\l__fontspec_strnum_int=\count280
+\l__fontspec_tmp_int=\count281
+\l__fontspec_tmpa_int=\count282
+\l__fontspec_tmpb_int=\count283
+\l__fontspec_tmpc_int=\count284
+\l__fontspec_em_int=\count285
+\l__fontspec_emdef_int=\count286
+\l__fontspec_strong_int=\count287
+\l__fontspec_strongdef_int=\count288
+\l__fontspec_tmpa_dim=\dimen161
+\l__fontspec_tmpb_dim=\dimen162
+\l__fontspec_tmpc_dim=\dimen163
 
 (C:\MiKTeX\tex/latex/base\fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
@@ -357,7 +368,7 @@ lt;mapping=tex-text;color=2B2B2BFF
 
 LaTeX Font Warning: Font shape `TU/inter-light(0)/m/n' in size <10> not availab
 le
-(Font)              size <8> substituted on input line 74.
+(Font)              size <8> substituted on input line 76.
 
 
 Package fontspec Info: inter-light scale = 0.7999972025624529.
@@ -384,18 +395,18 @@ cript=latn;language=dflt;mapping=tex-text;"
 (C:\MiKTeX\tex/latex/textpos\textpos.sty
 Package: textpos 2022/07/23 v1.10.1
 Package textpos Info: choosing support for LaTeX3 on input line 60.
-\TP@textbox=\box54
-\TP@holdbox=\box55
-\TPHorizModule=\dimen161
-\TPVertModule=\dimen162
-\TP@margin=\dimen163
-\TP@absmargin=\dimen164
+\TP@textbox=\box57
+\TP@holdbox=\box58
+\TPHorizModule=\dimen164
+\TPVertModule=\dimen165
+\TP@margin=\dimen166
+\TP@absmargin=\dimen167
 
 Grid set 16 x 16 = 38.39343pt x 49.68562pt
-\TPboxrulesize=\dimen165
-\TP@ox=\dimen166
-\TP@oy=\dimen167
-\TP@tbargs=\toks20
+\TPboxrulesize=\dimen168
+\TP@ox=\dimen169
+\TP@oy=\dimen170
+\TP@tbargs=\toks21
 TextBlockOrigin set to 0pt x 0pt
 ) (C:\MiKTeX\tex/latex/isodate\isodate.sty
 Package: isodate 2010/01/03 v2.30 Print dates with different formats (HH)
@@ -403,7 +414,7 @@ Package: isodate 2010/01/03 v2.30 Print dates with different formats (HH)
 Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
 ) (C:\MiKTeX\tex/latex/substr\substr.sty
 Package: substr 2009/10/20 v1.2 Handle substrings
-\c@su@anzahl=\count288
+\c@su@anzahl=\count289
 )
 (C:\MiKTeX\tex/latex/isodate\english.idf
 File: english.idf 2010/01/03 v2.30 Language definitions for isodate package (HH
@@ -411,38 +422,38 @@ File: english.idf 2010/01/03 v2.30 Language definitions for isodate package (HH
 
 Define commands for English date format
 )
-\c@iso@tmpmonth=\count289
-\c@iso@yeartwo=\count290
-\c@iso@slash=\count291
-\c@iso@minus=\count292
-\c@iso@dot=\count293
-\c@iso@@slash=\count294
-\c@iso@@minus=\count295
-\c@iso@@dot=\count296
+\c@iso@tmpmonth=\count290
+\c@iso@yeartwo=\count291
+\c@iso@slash=\count292
+\c@iso@minus=\count293
+\c@iso@dot=\count294
+\c@iso@@slash=\count295
+\c@iso@@minus=\count296
+\c@iso@@dot=\count297
 ) (C:\MiKTeX\tex/latex/titlesec\titlesec.sty
 Package: titlesec 2021/07/05 v2.14 Sectioning titles
-\ttl@box=\box56
-\beforetitleunit=\skip65
-\aftertitleunit=\skip66
-\ttl@plus=\dimen168
-\ttl@minus=\dimen169
-\ttl@toksa=\toks21
-\titlewidth=\dimen170
-\titlewidthlast=\dimen171
-\titlewidthfirst=\dimen172
+\ttl@box=\box59
+\beforetitleunit=\skip66
+\aftertitleunit=\skip67
+\ttl@plus=\dimen171
+\ttl@minus=\dimen172
+\ttl@toksa=\toks22
+\titlewidth=\dimen173
+\titlewidthlast=\dimen174
+\titlewidthfirst=\dimen175
 ))
 (C:\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
 Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
 
-\f@nch@headwidth=\skip67
-\f@nch@O@elh=\skip68
-\f@nch@O@erh=\skip69
-\f@nch@O@olh=\skip70
-\f@nch@O@orh=\skip71
-\f@nch@O@elf=\skip72
-\f@nch@O@erf=\skip73
-\f@nch@O@olf=\skip74
-\f@nch@O@orf=\skip75
+\f@nch@headwidth=\skip68
+\f@nch@O@elh=\skip69
+\f@nch@O@erh=\skip70
+\f@nch@O@olh=\skip71
+\f@nch@O@orh=\skip72
+\f@nch@O@elf=\skip73
+\f@nch@O@erf=\skip74
+\f@nch@O@olf=\skip75
+\f@nch@O@orf=\skip76
 ) (TaylorTurnerResume2023.aux)
 \openout1 = `TaylorTurnerResume2023.aux'.
 
@@ -654,7 +665,16 @@ ble
 (Font)              size <8> substituted on input line 20.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 90.
+(Font)              <8> on input line 28.
+
+Overfull \hbox (0.67776pt too wide) in paragraph at lines 34--41
+[] 
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\\' on input line 135.
+
 [1
 
 ] (TaylorTurnerResume2023.aux)
@@ -667,15 +687,15 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `TaylorTurnerResume2023.out' has not changed.
 
-(rerunfilecheck)             Checksum: 19ED39CB784022E2672574541C6F5AF6;1209.
+(rerunfilecheck)             Checksum: 84CB5ADCDF57C321CF147CC8E2189493;1310.
  ) 
 Here is how much of TeX's memory you used:
- 13137 strings out of 410532
- 255353 string characters out of 2820404
- 684186 words of memory out of 3000000
- 34139 multiletter control sequences out of 15000+600000
- 474012 words of font info for 73 fonts, out of 8000000 for 9000
+ 13229 strings out of 410532
+ 256447 string characters out of 2820404
+ 687365 words of memory out of 3000000
+ 34227 multiletter control sequences out of 15000+600000
+ 473758 words of font info for 73 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 87i,11n,136p,494b,537s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 87i,11n,136p,392b,533s stack positions out of 10000i,1000n,20000p,200000b,80000s
 
 Output written on TaylorTurnerResume2023.pdf (1 page).
