@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.10) (preloaded format=xelatex 2023.1.30)  10 OCT 2023 13:10
+This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.10) (preloaded format=xelatex 2023.1.30)  11 OCT 2023 09:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -672,8 +672,15 @@ Overfull \hbox (0.67776pt too wide) in paragraph at lines 34--41
  []
 
 
+LaTeX Font Warning: Font shape `TU/inter-light(0)/m/n' in size <7> not availabl
+e
+(Font)              size <8> substituted on input line 119.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 119.
+
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 135.
+(hyperref)                removing `\\' on input line 132.
 
 [1
 
@@ -690,10 +697,10 @@ Package rerunfilecheck Info: File `TaylorTurnerResume2023.out' has not changed.
 (rerunfilecheck)             Checksum: 84CB5ADCDF57C321CF147CC8E2189493;1310.
  ) 
 Here is how much of TeX's memory you used:
- 13229 strings out of 410532
- 256447 string characters out of 2820404
+ 13231 strings out of 410532
+ 256484 string characters out of 2820404
  688365 words of memory out of 3000000
- 34227 multiletter control sequences out of 15000+600000
+ 34229 multiletter control sequences out of 15000+600000
  473758 words of font info for 73 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  87i,11n,136p,392b,533s stack positions out of 10000i,1000n,20000p,200000b,80000s
