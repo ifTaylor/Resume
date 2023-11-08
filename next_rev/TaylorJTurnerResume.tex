@@ -1,0 +1,104 @@
+\documentclass[letterpaper,10pt]{article} % Change 'a4paper' to 'letterpaper'
+
+\usepackage[left=0.75in, right=0.75in, top=0.75in, bottom=0.75in]{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{titlesec}
+
+\pagestyle{empty}
+
+% Adjust section title formatting
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{4pt}{2pt}
+
+% Define a command for the company name and job title formatting
+\newcommand{\job}[3]{
+\textbf{#1 - #2} \hfill \textit{#3}
+}
+
+% Define a command for the education section
+\newcommand{\education}[4]{
+  \textbf{#1 - #2} \hfill #3
+}
+
+% Set the page geometry
+\geometry{top=0.5in, bottom=0.5in, left=0.5in, right=0.5in}
+
+\begin{document}
+
+\small % Set the font size to \small
+
+\section{\centerline{\LARGE \textnormal{Taylor J Turner}}}
+Email: resume.tturner@gmail.com \hfill Phone: (618) 402-4677 \hfill LinkedIn: \href{https://www.linkedin.com/in/ifTaylorthenHire}{linkedin.com/in/ifTaylorthenHire}
+\bigskip
+
+\section{Summary}
+Software / Electrical Controls Engineer with extensive experience leading technical projects and developing innovative software solutions.
+
+\section{Skills}
+\noindent Highly skilled in diverse programming languages.\\
+\hspace*{\fill} • C\# • Python • T-SQL • TypeScript • IEC 61131-3 Automation Standard \hspace*{\fill}
+
+\noindent Experience with various frameworks and libraries.\\
+\hspace*{\fill} • ASP.NET Core • Entity Framework • T-SQL • Flask • gRPC • React.js \hspace*{\fill}
+
+\noindent Proficient using development tools and environments.\\
+\hspace*{\fill} • Visual Studio/Code • Git • Github • Azure • Vercel • Postman \hspace*{\fill} \\
+\hspace*{\fill} • Studio 5000 • TwinCAT • TIA Portal • Ignition Designer • Indusoft \hspace*{\fill}
+
+\noindent Strong background in methodologies and concepts.\\
+\hspace*{\fill} • Agile/Sprint • Object-Oriented Programming (OOP) • Failure Modes and Effects Analysis (FMEA) \hspace*{\fill} \\
+\hspace*{\fill} • UL 508A • SCADA • Project Management \hspace*{\fill}
+
+
+\section{Work Experience}
+\noindent\job{Bastian Solutions}{Software Engineer}{September 2022 -- Present}
+\begin{itemize}[left=2em]
+	\item Developed software for manufacturing applications and interfacing automation controllers, robots, and vision systems.
+	\item Migrated palletization applications from WinForms to .NET Core and Next.js/React.js frameworks.
+	\item Created python/C+ clients to support warehouse management systems' communication with peripheral. The integration of this software required threaded processes, real-time resource locking, and micro-controller-controlled HID interfaces.
+	\item Enhanced robot picking applications to bridge device communication using Python.
+	\item Transitioned products from R\&D to manufacturing, focusing on continuous improvement in integration testing and product statistics.
+\end{itemize}
+
+\noindent\job{Electrical Controls Engineer II}{Beckwood Press}{October 2021 – September 2022}
+\begin{itemize}[left=2em]
+	\item Designed numerical and computational methods for sensor filtering and linearization.
+	\item Developed embedded closed-loop algorithms for output modeling and discrete kinematic control.
+	\item Created databases for machine parameterization and programming.
+	\item Led machine performance studies on new product lines for application in the marketplace.
+\end{itemize}
+
+\noindent\job{Electrical Controls Engineer I}{Beckwood Press}{October 2017 – October 2021}
+\begin{itemize}[left=2em]
+	\item Oversaw the electrical design and program development of hydraulic processes and automation integration. Custom design
+	structure allowed rapid development of custom processes and competitive integration.
+	\item Developed electrical design standardization under UL 508A specification and certification.
+	\item Led press and machine start up and final acceptance testing. It is rewarding to demonstrate high performance process
+	quality and understanding to customers.
+\end{itemize}
+	
+\noindent\job{Electrical Controls Technician}{Beckwood Press}{October 2016 – October 2017}
+\begin{itemize}[left=2em]
+	\item Facilitated communication between engineering and production through documentation and process management.
+	\item Began developing electrical designs and programing solutions. Growth within the organization allowed me to demonstrate
+	decision making responsibilities, leadership, and a passion.
+	\item Assisted with process and programming troubleshooting for customers.
+\end{itemize}
+
+\noindent\job{Electrical Controls Electrician}{EPIC Inc.}{December 2014 – October 2016}
+\begin{itemize}[left=2em]
+	\item Assembled and designed electrical panels and machine wiring for pilot plants, vision systems, and custom machines.
+	\item Implemented designs conforming to sanitary/wash-down, Class I Division I, and National Electric Code requirements.
+	\item Assisted engineering during start-up and final acceptance testing.
+	\item Cross-trained in process design.
+\end{itemize}
+
+\section{Education}
+\education{Ranken Technical College}{Associate Degree in Electrical Control Systems}{December 2014}
+
+\section{Volunteer}
+\job{Offensive/Defensive Line Coach}{Titans of Troy, IL}{}
+
+
+\end{document}
