@@ -2,71 +2,58 @@ Software Engineer
 Bastian Solutions
 Maryland Heights, MO;
 09/2022 or 09/01/2022
-• Developed software for manufacturing applications and interfacing automation controllers, robots,
-and vision systems.
-
-•Migrated a palletization application from WinForms to .NET Core and Next.js/React.js frameworks.
-    • Reactive pallet pattern editing • Real-time peripheral device interrupts
-    • Entity Framework Core relational database • REST API methods
-    • Utility Patented
-
-• Enhanced a robot picking application to bridge device communication using Python.
-    • Vision system communication with gRPC • Automation Control with OPC UA and Pylogix
-    • Serial buffering to robots • Statistical data analysis of picking performance
-    • Vision A.I. annotation
-
-• Created a Python/C++ application utilizing threaded processes, real-time resource locking, and
-micro-controller-controlled cursor commands to manage a warehouse interface and queue robot
-parameters.
-
-• Transitioned products from R&D to manufacturing, focusing on continuous improvement in
-integration testing and product statistics.
-
-
-
-Chief Technology Officer
-Pristine STL
-St. Louis, MO
-10/2020 or 10/01/2020
-• Pridefully provide technology solutions for our family business.
-
-• Created and maintain the development and promotion of Pristine’s website pristinestl.com
-
-• Deploy software as a service solutions for the owner, crews and customers.
+• Developed software for advanced logistic applications, ensuring smooth integration with warehouse management systems,
+automation controllers, robots, and vision systems.
+• Leveraged Azure cloud resources for blob storage and containerization for deployment, enabling enterprise level software
+development.
+• Migrated palletization applications from WinForms to modern frameworks such as .NET Core and React.js or Angular,
+improving performance and scalability.
+• Created clients to communicate between a warehouse management system’s server to peripheral devices, incorporating API
+brokers, real-time resource management, and micro-controller-controlled HID interfaces.
+• Transitioned products from research and development phase to manufacturing, with a focus on enhancing integration testing
+methodologies and leveraging product statistics for continuous improvement initiatives.
 
 
 
 Electrical Controls Engineer II
 Beckwood Press
 Fenton, MO
-10/2016-09/2021 or 10/01/2016-09/01/2021
-• Designed electrical systems for 50+ custom hydraulic and servo presses.
+October 2021 – September 2022
+• Developed embedded closed-loop algorithms for output modeling and discrete kinematic control.
+• Designed numerical and computational methods for sensor filtering and linearization.
+• Created databases for machine parameterization and programming.
+• Led machine performance studies on new product lines for application in the marketplace.
 
-• Programmed controls applications using automation controllers.
-    • Procedural logic for discrete systems • Sensor filtering and linearization
-    • Machine parameter databases • Closed-loop motion control
+Electrical Controls Engineer I
+Beckwood Press
+Fenton, MO
+October 2017 – October 2021
+• Oversaw the electrical design and program development of hydraulic processes and automation integration. Custom electrical
+and programming structure allowed rapid development of custom processes and competitive integration.
+• Developed electrical design standardization under UL 508A specification and certification.
+• Led press and machine start up and final acceptance testing. It is rewarding to demonstrate high performance processes and
+quality designs to customers.
 
-• Facilitated team collaboration to understand and prioritize low-level solutions. Our team grew design
-processes for accelerated development and integration.
 
-• Led product performance publications. Extensive data collection, white-papers and marketing
-strategy showcased product performance and competitiveness within the marketplace.
-
+Electrical Controls Technician
+Beckwood Press
+Fenton, MO
+October 2016 – October 2017
+• Facilitated communication between engineering and production through documentation and process management.
+• Began developing electrical designs and programming solutions. Growth within the organization allowed me to demonstrate
+decision making responsibilities, leadership, and a passion.
+• Assisted with process and programming troubleshooting for customers.
 
 
 
 Electrical Controls Technician
 EPIC Inc.
 St. Louis, MO
-12/2014-10/2016 or 12/01/2014-10/01/2016
-• Oversaw the assembly and design of electrical panels and machine wiring.
-    • Pilot plants • Vision systems • Custom Machines
-
-• Implemented designs that conformed to sanitary/wash-down, Class I Division I, and National Electric
-Code requirements.
-
-• The multidisciplinary nature of these products gave the opportunity to be cross-trained in
-mechanical and process design.
+December 2014 – October 2016
+• Assembled and designed electrical panels and machine wiring for pilot plants, vision systems, and custom machines.
+• Implemented designs conforming to sanitary/wash-down, Class I Division I, and National Electric Code requirements.
+• Assisted engineering during start-up and final acceptance testing.
+• Cross-trained in process design.
 
 
 
