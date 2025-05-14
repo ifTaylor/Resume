@@ -1,0 +1,107 @@
+
+\documentclass[letterpaper,10pt]{article} % Change 'a4paper' to 'letterpaper'
+\raggedright
+
+\usepackage[left=0.75in, right=0.75in, top=0.75in, bottom=0.75in]{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{titlesec}
+
+\pagestyle{empty}
+
+% Adjust section title formatting
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{4pt}{2pt}
+
+% Define a command for the company name and job title formatting
+\newcommand{\job}[3]{
+\textbf{#1 - #2} \hfill \textit{#3}
+}
+
+% Define a command for the education section
+\newcommand{\education}[4]{
+  \textbf{#1 - #2} \hfill #3
+}
+
+% Set the page geometry
+\geometry{top=0.5in, bottom=0.5in, left=0.5in, right=0.5in}
+
+\begin{document}
+
+\small % Set the font size to \small
+
+\section{\centerline{\LARGE \textnormal{Taylor J Turner}}}
+Email: resume.tturner@gmail.com \hfill Phone: (618) 402-4677 \hfill LinkedIn: \href{https://www.linkedin.com/in/ifTaylorthenHire}{linkedin.com/in/ifTaylorthenHire}
+\bigskip
+
+\begin{center}
+\begin{minipage}{\textwidth}
+\centering
+Software and Electrical Controls Engineer with experience in advanced logistic applications, \\
+hydraulic control systems, and chemical process instrumentation.
+\end{minipage}
+\end{center}
+\bigskip
+
+\section{Skills}
+\noindent Highly skilled in diverse programming languages.\\
+\hspace*{\fill} • C\# • Python • T-SQL • TypeScript • IEC 61131-3 Automation Standard \hspace*{\fill}
+
+\noindent Experience with various frameworks and libraries.\\
+\hspace*{\fill} • ASP.NET Core • Entity Framework • SQLAlchemy • FastAPI • gRPC • React.js • Angular \hspace*{\fill}
+
+\noindent Proficient using development tools and environments.\\
+\hspace*{\fill} • Visual Studio/Code • Git • GitHub • Azure • Vercel • Postman \hspace*{\fill} \\
+\hspace*{\fill} • Studio 5000 • TwinCAT • TIA Portal • Ignition Designer • Indusoft \hspace*{\fill}
+
+\noindent Strong background in methodologies and concepts.\\
+\hspace*{\fill} • Agile/Sprint • Object-Oriented Programming (OOP) • Failure Modes and Effects Analysis (FMEA) \hspace*{\fill} \\
+\hspace*{\fill} • UL 508A • SCADA • Project Management \hspace*{\fill}
+
+\section{Work Experience}
+\noindent\job{Bastian Solutions}{Software Engineer}{September 2022 -- Present}
+\begin{itemize}[left=2em]
+    \item Led the modernization of palletization applications by migrating legacy WinForms systems to .NET Core and React.js/Angular, improving performance and scalability across enterprise deployments.
+    \item Designed and implemented Azure-based solutions for blob storage and containerized deployments, streamlining CI/CD pipelines and reducing deployment time by 40%.
+    \item Developed API brokers and real-time resource managers to facilitate communication between WMS servers and peripheral devices, enhancing system responsiveness and reliability.
+    \item Spearheaded the transition of R&D products to manufacturing by establishing robust integration testing frameworks and leveraging product analytics for iterative improvements.
+    \item Engineered software for logistics automation, integrating with robots, vision systems, and controllers to ensure seamless warehouse operations.
+    \item Developed a Python application using Dependency Injector to interface with an IFM vision system, enabling real-time pallet location detection; serialized and transmitted location data to a FANUC robot via socket server, improving pick accuracy and reducing cycle time by 15%.
+\end{itemize}
+
+\noindent\job{Beckwood Press}{Electrical Controls Engineer II}{October 2021 – September 2022}
+\begin{itemize}[left=2em]
+    \item Developed embedded closed-loop algorithms for output modeling and discrete kinematic control, enhancing machine precision and reliability.
+    \item Designed numerical and computational methods for sensor filtering and linearization, improving data accuracy and system performance.
+    \item Created databases for machine parameterization and programming, streamlining configuration and reducing setup time by 30%.
+    \item Led machine performance studies on new product lines, providing actionable insights for market application and product improvement.
+\end{itemize}
+
+\noindent\job{Beckwood Press}{Electrical Controls Engineer I}{October 2017 – October 2021}
+\begin{itemize}[left=2em]
+    \item Oversaw the electrical design and program development of hydraulic processes and automation integration, enabling rapid development of custom processes and competitive integration.
+    \item Developed electrical design standardization under UL 508A specification and certification, ensuring compliance and enhancing safety.
+    \item Led press and machine start-up and final acceptance testing, demonstrating high-performance processes and quality designs to customers.
+\end{itemize}
+
+\noindent\job{Beckwood Press}{Electrical Controls Technician}{October 2016 – October 2017}
+\begin{itemize}[left=2em]
+    \item Facilitated communication between engineering and production through documentation and process management, improving workflow efficiency.
+    \item Developed electrical designs and programming solutions, demonstrating decision-making responsibilities, leadership, and passion.
+    \item Assisted with process and programming troubleshooting for customers, ensuring timely resolution and customer satisfaction.
+\end{itemize}
+
+\noindent\job{EPIC Inc.}{Electrical Controls Electrician}{December 2014 – October 2016}
+\begin{itemize}[left=2em]
+    \item Assembled and designed electrical panels and machine wiring for pilot plants, vision systems, and custom machines, ensuring compliance with sanitary/wash-down, Class I Division I, and National Electric Code requirements.
+    \item Assisted engineering during start-up and final acceptance testing, ensuring successful project completion.
+    \item Cross-trained in process design, enhancing versatility and skill set.
+\end{itemize}
+
+\section{Education}
+\education{Ranken Technical College}{Associate Degree in Electrical Control Systems}{December 2014}
+
+\section{Volunteer}
+\job{Offensive/Defensive Line Football Coach}{Titans of Troy, IL}{}
+
+\end{document}
