@@ -1,3 +1,4 @@
+
 \documentclass[letterpaper,10pt]{article} % Change 'a4paper' to 'letterpaper'
 \raggedright
 
@@ -5,6 +6,9 @@
 \usepackage{enumitem}
 \usepackage{hyperref}
 \usepackage{titlesec}
+\usepackage{multicol}
+\usepackage{tabularx}
+\usepackage{enumitem}
 
 \pagestyle{empty}
 
@@ -13,8 +17,10 @@
 \titlespacing{\section}{0pt}{4pt}{2pt}
 
 % Define a command for the company name and job title formatting
-\newcommand{\job}[3]{
-\textbf{#1 - #2} \hfill \textit{#3}
+\newcommand{\job}[3]{%
+  \noindent\makebox[\textwidth]{%
+    \textbf{#1 - #2} \hfill \textit{#3}%
+  }%
 }
 
 % Define a command for the education section
@@ -36,75 +42,101 @@ Email: resume.tturner@gmail.com \hfill Phone: (618) 402-4677 \hfill LinkedIn: \h
 \begin{center}
 \begin{minipage}{\textwidth}
 \centering
-Software and Electrical Controls Engineer with experience in advanced logistic applications, \\
-hydraulic control systems, and chemical process instrumentation.
+Software and Electrical Controls Engineer with experience developing advanced logistic applications, \\
+designing hydraulic control systems, and implementing chemical process instrumentation.
 \end{minipage}
 \end{center}
 \bigskip
 
-\section{Skills}
-\noindent Highly skilled in diverse programming languages.\\
-\hspace*{\fill} • C\# • Python • T-SQL • TypeScript • IEC 61131-3 Automation Standard \hspace*{\fill}
-
-\noindent Experience with various frameworks and libraries.\\
-\hspace*{\fill} • ASP.NET Core • Entity Framework • SQLAlchemy • fastAPI • gRPC • React.js • Angular\hspace*{\fill}
-
-\noindent Proficient using development tools and environments.\\
-\hspace*{\fill} • Visual Studio/Code • Git • Github • Azure • Vercel • Postman \hspace*{\fill} \\
-\hspace*{\fill} • Studio 5000 • TwinCAT • TIA Portal • Ignition Designer • Indusoft \hspace*{\fill}
-
-\noindent Strong background in methodologies and concepts.\\
-\hspace*{\fill} • Agile/Sprint • Object-Oriented Programming (OOP) • Failure Modes and Effects Analysis (FMEA) \hspace*{\fill} \\
-\hspace*{\fill} • UL 508A • SCADA • Project Management \hspace*{\fill}
-
 
 \section{Work Experience}
-\noindent\job{Bastian Solutions}{Software Engineer}{September 2022 -- Present}
-\begin{itemize}[left=2em]
-	\item Developed software for advanced logistic applications, ensuring smooth integration with warehouse management systems, automation controllers, robots, and vision systems.
-	\item Leveraged Azure cloud resources for blob storage and containerization for deployment, enabling enterprise level software development.
-	\item Migrated palletization applications from WinForms to modern frameworks such as .NET Core and React.js or Angular, improving performance and scalability.
-	\item Created clients to communicate between a warehouse management system's server to peripheral devices, incorporating API brokers, real-time resource management, and micro-controller-controlled HID interfaces.
-	\item Transitioned products from research and development phase to manufacturing, with a focus on enhancing integration testing methodologies and leveraging product statistics for continuous improvement initiatives.
+\vspace{0.5em}
+\noindent\job{Bastian Solutions: Robotics}{Software Engineer}{September 2022 -- Present}
+\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}p{1cm} X}
+Scope: &
+\begin{minipage}[t]{\hsize}
+\begin{itemize}[left=1em, itemsep=0.25em]
+    \item Developed software to coordinate robots, vision systems, and automation controllers, enabling streamlined logistics operations.
+    \item Implemented cloud-based solutions for blob storage and containerized deployments, streamlining CI/CD pipelines and reducing deployment time by 40\%.
+    \item Transitioned prototypes from R\&D into production-ready products by establishing testing frameworks and product analytics for iterative improvements.
+    Stable product lines were established and multiple deployments contracted, creating customer partnerships.
 \end{itemize}
+\end{minipage}
+\vspace{0.5em}
+\\
+Projects: &
+\begin{minipage}[t]{\hsize}
+\begin{itemize}[left=1em, itemsep=0.25em]
+    \item \textbf{Pick and Drop:} Pallet pick and drop Python application that detected pallet pocket locations and serialized motion data from an IFM vision system to a FANUC robot via socket communication.
+    \item \textbf{Smart Pick:} Bin picking solution that interfaced an in-house vision system and large language models to guide a robot's motion pipeline.
+    Supporting software tools were also developed, including annotation management software using Azure cloud blob storage and a developed Angular UI for data filtering and AI dataset version control.
+    \item \textbf{Image Picker:} Screen controller for management software that facilitated communication between warehouse picking orders and robots, which used character recognition(OCR) and mouse(HID) to control the management software.
+    \item \textbf{Stack Order:} Box stacking pattern generator for palletization applications.
+    This in-house software was migrated from WinForms to .NET Core and React.js and multi-client web application.
+\end{itemize}
+\end{minipage}
+\end{tabularx}
+\vspace{0.5em}
 
-\noindent\job{Electrical Controls Engineer II}{Beckwood Press}{October 2021 – September 2022}
-\begin{itemize}[left=2em]
-	\item Developed embedded closed-loop algorithms for output modeling and discrete kinematic control.
-	\item Designed numerical and computational methods for sensor filtering and linearization.
-	\item Created databases for machine parameterization and programming.
-	\item Led machine performance studies on new product lines for application in the marketplace.
+\noindent\job{Beckwood Press}{Electrical Controls Engineer II}{October 2021 – September 2022}
+\noindent\job{Beckwood Press}{Electrical Controls Engineer I}{October 2016 – October 2021}
+\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}p{1cm} X}
+Scope: &
+\begin{minipage}[t]{\hsize}
+\begin{itemize}[left=1em, itemsep=0.25em]
+    \item Led electrical system design which included PLC programming, designing UL 508A-certified panels and successful customer acceptance testing.
+    \item Developed and maintained machine parameterization databases and standardized control programs, improving modularity and speed of deployment.
+    \item Conducted performance analysis of new product lines, directly informing product enhancements and market readiness.
 \end{itemize}
+\end{minipage}
+\vspace{0.5em}
+\\
+Projects: &
+\begin{minipage}[t]{\hsize}
+\begin{itemize}[left=1em, itemsep=0.25em]
+    \item \textbf{Hydraulic Control:} Closed-loop control algorithms and kinematic models to control the position or force of hydraulic cylinders.
+    The software implemented feed-forward control, kalman filtering, and target generation on multiple automation controller platforms.
+    \item \textbf{Servo Press:} All electric driven press powered by Yaskawa and Allen-Bradley servo controllers.
+    Encoder driven position and load cell force feedback provided the highest level of accuracy of any product line.
+    \item \textbf{Auxiliary Systems:} Control solutions for custom infeed/outfeed, containment, or conveyance systems.
+\end{itemize}
+\end{minipage}
+\end{tabularx}
+\vspace{0.5em}
 
-\noindent\job{Electrical Controls Engineer I}{Beckwood Press}{October 2017 – October 2021}
-\begin{itemize}[left=2em]
-	\item Oversaw the electrical design and program development of hydraulic processes and automation integration. Custom electrical and 	programming structure allowed rapid development of custom processes and competitive integration.
-	\item Developed electrical design standardization under UL 508A specification and certification.
-	\item Led press and machine start up and final acceptance testing. It is rewarding to demonstrate high performance processes
-	and quality designs to customers.
+\noindent\job{EPIC Inc.}{Electrical Controls Electrician}{December 2014 – October 2016}
+\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}p{1cm} X}
+Scope: &
+\begin{minipage}[t]{\hsize}
+\begin{itemize}[left=1em, itemsep=0.25em]
+    \item Assembled electrical panels and machinery for pilot plants, vision systems, and custom industrial equipment.
+    \item Interpreted and implemented designs conforming to NEC, sanitary/wash-down, and Class I Division I standards.
+    \item Supported engineering during startup and factory acceptance testing to verify functionality and compliance.
 \end{itemize}
-	
-\noindent\job{Electrical Controls Technician}{Beckwood Press}{October 2016 – October 2017}
-\begin{itemize}[left=2em]
-	\item Facilitated communication between engineering and production through documentation and process management.
-	\item Began developing electrical designs and programming solutions. Growth within the organization allowed me to demonstrate
-	decision making responsibilities, leadership, and a passion.
-	\item Assisted with process and programming troubleshooting for customers.
-\end{itemize}
+\end{minipage}
+\end{tabularx}
+\vspace{0.5em}
 
-\noindent\job{Electrical Controls Electrician}{EPIC Inc.}{December 2014 – October 2016}
-\begin{itemize}[left=2em]
-	\item Assembled and designed electrical panels and machine wiring for pilot plants, vision systems, and custom machines.
-	\item Implemented designs conforming to sanitary/wash-down, Class I Division I, and National Electric Code requirements.
-	\item Assisted engineering during start-up and final acceptance testing.
-	\item Cross-trained in process design.
-\end{itemize}
+\section{Skills}
+\vspace{0.8em}
+\begin{minipage}{0.95\textwidth}
+\hspace{8em}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} p{0.2\textwidth} p{0.75\textwidth}}
+\textbf{Languages:} & Python, C\#, C++, TypeScript, T-SQL, Structured Text (IEC 61131-3) \\
+\textbf{Backend:} & FastAPI, SQLAlchemy, ASP.NET Core, Entity Framework, gRPC \\
+\textbf{Frontend:} & Angular, Tailwind CSS, React.js, HTML5, CSS3 \\
+\textbf{DevOps / Cloud:} & Azure, Docker, Poetry, Deployment Actions, Vercel, CI/CD Pipelines \\
+\textbf{Automation SCADA:} & Studio 5000, TwinCAT, TIA Portal, Ignition, Indusoft \\
+\textbf{Methodologies:} & OOP, Agile/Scrum, FMEA, SCADA Design, UL 508A, Project Management \\
+\end{tabular*}
+\end{minipage}
+\vspace{0.5em}
 
 \section{Education}
 \education{Ranken Technical College}{Associate Degree in Electrical Control Systems}{December 2014}
 
+
 \section{Volunteer}
 \job{Offensive/Defensive Line Football Coach}{Titans of Troy, IL}{}
-
 
 \end{document}
