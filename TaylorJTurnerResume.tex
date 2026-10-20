@@ -4,16 +4,17 @@
 \usepackage[left=0.5in, right=0.5in, top=0.5in, bottom=0.5in]{geometry}
 \usepackage{enumitem}
 \usepackage{hyperref}
+\hypersetup{hidelinks}
 \usepackage{titlesec}
 
 \pagestyle{empty}
 
 \titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
-\titlespacing{\section}{0pt}{2pt}{2pt}
+\titlespacing{\section}{0pt}{6pt}{3pt}
 
 \newcommand{\job}[3]{%
   \noindent\makebox[\textwidth]{%
-    \textbf{#1 — #2} \hfill \textit{#3}%
+    \textbf{#1} — #2 \hfill \textit{#3}%
   }%
 }
 
@@ -21,86 +22,86 @@
   \textbf{#1 — #2} \hfill #3
 }
 
+\newcommand{\role}[2]{%
+  \noindent\textbf{#1} \hfill \textit{#2}\par
+}
+
+
 \begin{document}
 \small
 
-\section{\centerline{\LARGE \textnormal{Taylor J Turner}}}
+\section{\texorpdfstring{\centerline{\LARGE \textnormal{Taylor J Turner}}}{Taylor J Turner}}
 Email: resume.tturner@gmail.com \hfill Phone: (618) 402-4677 \hfill Web: \href{https://www.iftaylor.com}{iftaylor.com} \hfill LinkedIn: \href{https://www.linkedin.com/in/ifTaylorthenHire}{linkedin.com/in/ifTaylorthenHire}
 \bigskip
 
 \begin{center}
-Software and Electrical Controls Engineer with over a decade delivering robotics and automation systems, integrating vision and cloud technologies, and hydraulic and chemical process systems at production scale.
+Software and electrical controls engineer with 10+ years of experience in industrial automation, spanning robotics software, machine vision, and electrical controls. Delivers integrated systems from prototype through production deployment across customer sites.
 \smallskip
 \end{center}
 \medskip
 
 \section{Work Experience}
 
-\job{Bastian Solutions: Robotics}{Software Engineer II}{April 2025 -- Present}
-\job{Bastian Solutions: Robotics}{Software Engineer I}{September 2022 -- April 2025}
-\begin{itemize}[left=1em, itemsep=0.25em]
+\noindent\textbf{Toyota Advanced Logistics} \textit{(formerly Bastian Solutions: Robotics)}\par
+\role{Software Engineer II}{April 2025 -- Present}
+\role{Software Engineer I}{September 2022 -- April 2025}
+\begin{itemize}[left=1em, itemsep=0.15em, topsep=3pt, parsep=0pt]
     \item Led cross-functional integration of robots, vision systems, and PLCs, enabling real-time automated logistics workflows.
-    \item Architected containerized deployments and CI/CD pipelines, reducing deployment time by 40\% and improving release reliability.
-    \item Owned delivery of automation platforms from prototype through production deployment across multiple customer sites.
-    \item Partnered with customers and field teams to deploy and refine custom automation systems in production environments.
-    \item Guided engineers and technicians during deployment and troubleshooting of integrated robotics systems.
+    \item Automated research and development (R\&D) model-training and initial-deployment workflows using containerization and CI/CD, reducing turnaround time by 40\%.
+    \item Delivered automation platforms from prototype through production deployment across multiple customer sites, coordinating with customers, engineers, and field technicians to commission and troubleshoot integrated systems.
 \end{itemize}
 
-\textbf{Key Platforms}
-\begin{itemize}[left=1em, itemsep=0.25em]
-    \item \textbf{Pick and Drop Automation Platform:} Enabled automated pallet handling through vision detection and motion serialization integrating IFM vision and FANUC robots.
-    \item \textbf{Smart Pick Vision Pipeline:} Delivered bin picking solution integrating vision and LLM-assisted workflows; built Azure annotation tools and Angular UI for dataset lifecycle management.
-    \item \textbf{Image Picker Integration Platform:} Enabled warehouse order systems to interface with robots via OCR and HID automation.
-    \item \textbf{Stack Order Platform:} Modernized palletization generator to .NET Core and React, enabling scalable multi-client deployment.
+\textbf{Selected Projects}
+\begin{itemize}[left=1em, itemsep=0.15em, topsep=3pt, parsep=0pt]
+    \item \textbf{PickAndDrop} (Python, Angular): Developed middleware connecting a vision system to a FANUC robot, implementing a custom detection pipeline for pallet pocket localization and socket communication to automate pallet handling.
+    \item \textbf{SmartPick} (Python, Angular): Integrated an in-house instance segmentation model trained in PyTorch into a robotic bin-picking vision system; built Azure annotation tools and a dataset-management interface.
+    \item \textbf{ImagePicker} (Python, React): Connected warehouse order systems to robots using optical character recognition (OCR) and human interface device (HID) automation.
+    \item \textbf{StackOrder} (C\#, React): Modernized .NET Core pallet-pattern generation software, supporting real-time pattern visualization and editing along with multiple peripheral devices.
 \end{itemize}
 \medskip
 
-\job{Beckwood Press}{Electrical Controls Engineer II}{October 2021 -- September 2022}
-\job{Beckwood Press}{Electrical Controls Engineer I}{October 2016 -- October 2021}
-\begin{itemize}[left=1em, itemsep=0.25em]
+\noindent\textbf{Beckwood Press}\par
+\role{Electrical Controls Engineer II}{October 2021 -- September 2022}
+\role{Electrical Controls Engineer I}{October 2016 -- October 2021}
+\begin{itemize}[left=1em, itemsep=0.15em, topsep=3pt, parsep=0pt]
     \item Led electrical system design including PLC programming, UL 508A-certified panels, and customer acceptance testing.
     \item Standardized machine parameterization and control programs, reducing configuration errors and improving deployment consistency.
-    \item Guided performance analysis of new product lines, informing enhancements and market readiness.
 \end{itemize}
 
-\textbf{Key Systems}
-\begin{itemize}[left=1em, itemsep=0.25em]
-    \item \textbf{Hydraulic Control System:} Enabled precise cylinder position and force control using feed-forward algorithms and Kalman filtering.
-    \item \textbf{Servo Press Platform:} Delivered high-precision all-electric press using Yaskawa and Allen-Bradley servo systems.
+\textbf{Selected Projects}
+\begin{itemize}[left=1em, itemsep=0.15em, topsep=3pt, parsep=0pt]
+    \item \textbf{Hydraulic Control Systems:} Achieved cylinder position control within 0.010 inches and force accuracy within $\pm 1\%$ using feed-forward algorithms and Kalman filtering.
+    \item \textbf{Servo Press Platforms:} Delivered high-precision all-electric presses using Yaskawa and Allen-Bradley servo systems.
     \item \textbf{Auxiliary Automation Systems:} Designed integrated infeed/outfeed, containment, and conveyance solutions.
 \end{itemize}
 \medskip
 
-\job{EPIC Inc.}{Electrical Controls Technician}{December 2014 -- October 2016}
-\begin{itemize}[left=1em, itemsep=0.25em]
+\noindent\textbf{EPIC Inc.}\par
+\role{Electrical Controls Technician}{December 2014 -- October 2016}
+\begin{itemize}[left=1em, itemsep=0.15em, topsep=3pt, parsep=0pt]
     \item Assembled electrical panels and industrial systems for pilot plants, vision systems, and custom equipment.
-    \item Implemented designs meeting NEC, sanitary/wash-down, and Class I Division I standards.
-    \item Supported engineering teams during startup and acceptance testing to ensure operational readiness.
+    \item Implemented full electrical installations, including panels and field devices, following engineering designs for NEC, sanitary/wash-down, and Class I, Division 1 requirements.
+    \item Supported engineering teams during startup and factory acceptance testing to verify system operation.
 \end{itemize}
 \bigskip
 
 \section{Skills}
 
-\textbf{Technical Expertise}
-\begin{itemize}[left=1em, itemsep=0.25em]
+\begin{itemize}[left=1em, itemsep=0.15em, topsep=3pt, parsep=0pt]
     \item Languages: Python, C\#, C++, TypeScript, T-SQL, Structured Text (IEC 61131-3)
     \item Backend: FastAPI, SQLAlchemy, ASP.NET Core, Entity Framework, gRPC
-    \item Frontend: Angular, Tailwind CSS, React, HTML5, CSS3
-    \item DevOps / Cloud: Azure, Docker, CI/CD, Automation Deployment, Vercel, Neon, Render
+    \item Machine Vision / ML: PyTorch, Instance Segmentation, OCR
+    \item Frontend: Angular, React, Tailwind CSS, HTML5, CSS3
+    \item DevOps / Cloud: Azure, Docker, CI/CD, Vercel, Neon, Render
     \item Automation Platforms: Studio 5000, TwinCAT, TIA Portal, Ignition, Indusoft
-\end{itemize}
-
-\textbf{Leadership \& Delivery}
-\begin{itemize}[left=1em, itemsep=0.25em]
-    \item System Architecture \quad Cross-Functional Integration \quad Productization
-    \item Deployment Ownership \quad Standardization \quad Operational Reliability
 \end{itemize}
 
 \section{Education}
 \education{Ranken Technical College}{Associate Degree in Electrical Control Systems}{December 2014}
 
-\section{Volunteer}
+\section{Community \& Interests}
+\job{Merit Badge Counselor (Radio)}{Scouting America}{}
+\job{Amateur Radio Operator}{Call Sign: AF\O{}FR, Projects: \href{https://af0fr.com}{af0fr.com}}{Extra Class License}
 \job{Football Coach (Offensive/Defensive Line)}{Titans of Troy, IL}{}
-\job{Amateur Radio Operator}{Call Sign: AF0FR, Projects: \href{https://www.iftaylor.com/af0fr}{iftaylor.com/af0fr}}{Extra Class License}
 
 \end{document}
