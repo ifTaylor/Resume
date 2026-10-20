@@ -1,0 +1,76 @@
+\documentclass[letterpaper,10pt]{article}
+\usepackage[left=0.5in,right=0.5in,top=0.5in,bottom=0.5in]{geometry}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{tabularx}
+\usepackage{enumitem}
+
+\pagestyle{empty}
+\raggedright
+
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{3pt}
+\setlist[itemize]{left=1em,itemsep=0.25em,topsep=0.25em}
+
+\begin{document}
+\small
+
+\begin{center}
+{\LARGE \textbf{Taylor J Turner}}\\
+\href{mailto:resume.tturner@gmail.com}{resume.tturner@gmail.com} \,|\, (618) 402-4677 \,|\, LinkedIn: \href{https://www.linkedin.com/in/ifTaylorthenHire}{linkedin.com/in/ifTaylorthenHire}
+\end{center}
+
+\section*{Robotics \& Industrial Systems Software Engineer}
+Software and electrical controls engineer building APIs and middleware that connect robots, vision systems, and PLCs. 
+Experience spanning logistics/warehouse automation, machine vision, and SCADA/MES—delivering production systems, CI/CD, and data collection with Python, C++, and .NET.
+
+\section{Skills}
+\begin{tabularx}{\textwidth}{@{}p{0.23\textwidth}X@{}}
+\textbf{Languages} & Python, C\#, C++, TypeScript, T-SQL, Structured Text (IEC 61131-3) \\
+\textbf{Backend} & FastAPI, ASP.NET Core, SQLAlchemy, Entity Framework, gRPC, REST \\
+\textbf{Frontend} & Angular, React.js, HTML5, CSS3, (Tailwind CSS) \\
+\textbf{DevOps/Cloud} & Azure, Docker, CI/CD (e.g., GitHub Actions/Azure DevOps), Containers, Blob Storage \\
+\textbf{Industrial/SCADA} & PLCs (Studio 5000, TwinCAT, TIA Portal), Robots (FANUC), Vision (ifm), Ignition, InduSoft \\
+\textbf{Methods} & OOP, Agile/Scrum, FMEA, Project \& Product Testing, UL 508A
+\end{tabularx}
+
+\section{Work Experience}
+
+\textbf{Bastian Solutions — Robotics} \hfill \textit{Software Engineer II (Apr 2025–Present); Software Engineer I (Sep 2022–Apr 2025)}\\[-0.25em]
+\begin{itemize}
+    \item Built software to coordinate robots, vision systems, and automation controllers for streamlined logistics operations (Python, C++, FastAPI, gRPC, Azure, Docker).
+    \item Implemented cloud-backed storage and containerized deployments; streamlined CI/CD and reduced deployment time by \textbf{~40\%}.
+    \item Productized R\&D prototypes by adding testing frameworks and product analytics to support iterative improvements; stabilized product lines and enabled multiple contracted deployments.
+\end{itemize}
+\textit{Selected Projects}
+\begin{itemize}
+    \item \textbf{Pick and Drop} — Python app detecting pallet pocket locations; serialized motion data from ifm vision to a FANUC robot via socket comms.
+    \item \textbf{Smart Pick} — Bin-picking pipeline integrating in-house vision and LLM guidance for motion; built annotation management with Azure Blob Storage and an Angular UI for filtering and AI dataset versioning.
+    \item \textbf{Image Picker} — Screen controller syncing WMS picking orders with robots using OCR and HID mouse control to drive management software.
+    \item \textbf{Stack Order} — Box-stacking pattern generator for palletization; migrated in-house tool from WinForms to .NET Core + React for multi-client web use.
+\end{itemize}
+
+\textbf{Beckwood Press} \hfill \textit{Electrical Controls Engineer II (Oct 2021–Sep 2022); I (Oct 2016–Oct 2021)}\\[-0.25em]
+\begin{itemize}
+    \item Led electrical system design and PLC programming; designed UL 508A panels and drove successful customer acceptance testing.
+    \item Built machine parameterization databases and standardized control programs to improve modularity and speed of deployment.
+    \item Performed performance analyses on new product lines to inform enhancements and release readiness.
+\end{itemize}
+\textit{Selected Projects}
+\begin{itemize}
+    \item \textbf{Hydraulic Control} — Closed-loop position/force control with kinematic models; implemented feed-forward control, \textit{Kalman} filtering, and target generation across multiple controller platforms.
+    \item \textbf{Servo Press} — All-electric press using Yaskawa/Allen-Bradley servo controllers; encoder-based position and load-cell force feedback for highest-accuracy product line.
+    \item \textbf{Auxiliary Systems} — Controls for custom infeed/outfeed, containment, and conveyance systems.
+\end{itemize}
+
+\textbf{EPIC Inc.} \hfill \textit{Electrical Controls Technician (Dec 2014–Oct 2016)}\\[-0.25em]
+\begin{itemize}
+    \item Assembled electrical panels/machinery for pilot plants, vision systems, and custom industrial equipment; supported startup and factory acceptance testing to verify function and compliance (NEC, sanitary/wash-down, Class I Div I).
+\end{itemize}
+
+\section{Education}
+\textbf{Ranken Technical College} — Associate Degree in Electrical Control Systems \hfill Dec 2014
+
+\section{Volunteer}
+Offensive/Defensive Line Football Coach, Titans of Troy, IL
+\end{document}

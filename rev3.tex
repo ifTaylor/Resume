@@ -1,0 +1,61 @@
+\documentclass[letterpaper,10pt]{article}
+\raggedright
+
+\usepackage[left=0.75in, right=0.75in, top=0.75in, bottom=0.75in]{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{multicol}
+\usepackage{tabularx}
+\usepackage{enumitem}
+
+\pagestyle{empty}
+
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{2pt}{2pt}
+
+\newcommand{\job}[3]{%
+  \noindent\makebox[\textwidth]{%
+    \textbf{#1 - #2} \hfill \textit{#3}%
+  }%
+}
+
+\newcommand{\education}[4]{
+  \textbf{#1 - #2} \hfill #3
+}
+
+\geometry{top=0.5in, bottom=0.5in, left=0.5in, right=0.5in}
+
+\begin{document}
+
+\small
+
+\section{\centerline{\LARGE \textnormal{Taylor J Turner}}}
+Email: resume.tturner@gmail.com \hfill Phone: (618) 402-4677 \hfill LinkedIn: \href{https://www.linkedin.com/in/ifTaylorthenHire}{linkedin.com/in/ifTaylorthenHire}
+\bigskip
+
+\begin{center}
+\begin{minipage}{\textwidth}
+\centering
+\textbf{Software and Controls Engineer} specializing in industrial automation, robotics, and system integration. Proven experience developing scalable logistics applications, real-time control systems, and cloud-based tools. Adept at bridging hardware and software—from UL508A panels to production-grade APIs—to deliver high-reliability solutions in complex environments.
+\end{minipage}
+\end{center}
+\bigskip
+
+\section{Work Experience}
+\vspace{0.5em}
+
+\noindent\job{Bastian Solutions: Robotics}{Software Engineer II / I}{Sep 2022 -- Present}
+\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}p{1cm} X}
+Scope: & 
+\begin{minipage}[t]{\hsize}
+\begin{itemize}[left=1em, itemsep=0.25em]
+    \item Engineered software coordinating robotic arms, vision systems, and industrial controllers for automated warehouse operations.
+    \item Led development of containerized CI/CD-ready deployments using Azure cloud and Docker; reduced release times by 40\%.
+    \item Transitioned multiple R\&D tools to production by implementing automated testing, telemetry, and system health metrics—resulting in multiple client rollouts and new service contracts.
+\end{itemize}
+\end{minipage}
+\\
+Projects: & 
+\begin{minipage}[t]{\hsize}
+\begin{item
